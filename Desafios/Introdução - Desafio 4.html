@@ -1,0 +1,30 @@
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <title>Curso Javascript</title>
+    </head>
+    <body>        
+        <script>
+            // Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é
+            
+            function experiencia(anos) {
+                var experienciaUsuario;
+                if (anos < 1) {
+                    experienciaUsuario = 'Iniciante';
+                } else if (anos >= 1 && anos < 3) {
+                    experienciaUsuario = 'Intermediário';
+                } else if (anos >= 3 && anos < 7) {
+                    experienciaUsuario = 'Avançado';
+                } else {
+                    experienciaUsuario = 'Jedi Master';
+                }
+
+                return experienciaUsuario;
+            }
+
+            var anosEstudo = 2;
+            var experienciaUsuario = experiencia(anosEstudo);
+            console.log(experienciaUsuario);
+        </script>
+    </body>
+</html>

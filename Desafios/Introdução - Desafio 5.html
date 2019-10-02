@@ -1,0 +1,28 @@
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <title>Curso Javascript</title>
+    </head>
+    <body>        
+        <script>
+            var usuarios = [
+                {
+                    nome: "Trubisco",
+                    habilidades: ["Javascript", "ReactJS", "Redux"]
+                },
+                {
+                    nome: "Bóris",
+                    habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+                }
+            ];
+
+            exibeHabilidades(usuarios);
+
+            function exibeHabilidades(usuarios){
+                for (usuario of usuarios) {
+                    console.log(`O ${usuario.nome} possui as habilidades: ${usuario.habilidades.join(', ')}`);
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <title>Curso Javascript</title>
+    </head>
+    <body>        
+        <script>
+            // Escreva uma função que verifique se o vetor de habilidades passado possui a habilidade "Javascript"
+            // e retorna um booleano true/false caso exista ou não.
+            
+            function temHabilidade(skills) {
+                var skill = skills.indexOf("Javascript");
+
+                return skill != -1;
+            }
+
+            var skills = ["Javascript", "ReactJS", "React Native"];
+            var possuiSkill = temHabilidade(skills);
+            console.log(possuiSkill);
+        </script>
+    </body>
+</html>

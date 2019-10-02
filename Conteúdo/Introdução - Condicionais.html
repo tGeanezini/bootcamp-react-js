@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Curso Javascript</title>
+    </head>
+    <body>        
+        <script>
+            // Não preciso indicar o tipo dos parâmetros e nem o tipo do retorno da função
+            function retornaSexo(sexo) {
+                // recebe M ou F
+                // retorna Masculino ou Feminino
+
+                // '==' verifica se os valores são iguais (ex: 1 == '1' => true)
+                // '===' verifica se além dos valores, o tipo das variáveis é igual (ex: 1 === '1' => false)
+                if (sexo === 'M') {
+                    return 'Masculino';
+                } else if (sexo === 'F') {
+                    return 'Feminino';
+                } else {
+                    return 'Outro';
+                }
+
+                switch (sexo) {
+                    case 'M':
+                        return 'Masculino';
+                    case 'F':
+                        return 'Feminino';
+                    default:
+                        return 'Outro';
+                }
+            }
+
+            var resultado = retornaSexo('M');
+
+            console.log(resultado);
+        </script>
+    </body>
+</html>
